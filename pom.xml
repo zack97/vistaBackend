@@ -24,19 +24,6 @@
         <lombok.version>1.18.38</lombok.version>
     </properties>
 
-    <repositories>
-        <!-- Lombok repository -->
-        <repository>
-            <id>projectlombok.org</id>
-            <url>https://projectlombok.org/mavenrepo</url>
-        </repository>
-        <!-- Maven Central -->
-        <repository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
-        </repository>
-    </repositories>
-
     <dependencies>
         <!-- Spring Boot starters -->
         <dependency>
@@ -112,14 +99,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
             </plugin>
 
             <!-- Maven Compiler Plugin -->
